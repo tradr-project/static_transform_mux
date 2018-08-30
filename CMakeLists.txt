@@ -4,7 +4,7 @@ project(static_transform_mux)
 find_package(catkin REQUIRED)
 
 catkin_package(
-  CATKIN_DEPENDS rospy tf tf2_msgs
+  CATKIN_DEPENDS rospy tf2_msgs
 )
 
 install(PROGRAMS
