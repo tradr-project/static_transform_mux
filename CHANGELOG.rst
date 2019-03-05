@@ -2,8 +2,8 @@
 Changelog for package static_transform_mux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2019-03-05)
+------------------
 * Changed the cache key to allow restructuring the TF tree.
 * Contributors: Martin Pecka
 
