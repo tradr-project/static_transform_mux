@@ -41,11 +41,11 @@ class StaticTransformMux(object):
 
         # Process the incoming transforms, merge them with our cache.
         for transform in tf_msg.transforms:
-            key = "%s->%s" % (transform.header.frame_id, transform.child_frame_id)
+            key = transform.child_frame_id
             if key not in self._transforms or not self._update_only_with_newer or \
                     self._transforms[key].header.stamp < transform.header.stamp:
-                rospy.logdebug("Updated transform %s. Old timestamp was %s, new timestamp is %s." % (
-                    key,
+                rospy.logdebug("Updated transform %s->%s. Old timestamp was %s, new timestamp is %s." % (
+                    transform.header.frame_id, transform.child_frame_id,
                     str(self._transforms[key].header.stamp if key in self._transforms else "None"),
                     str(transform.header.stamp)))
 
