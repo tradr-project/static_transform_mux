@@ -21,8 +21,9 @@ class StaticTransformMux(object):
 
         self._update_only_with_newer = rospy.get_param("~update_only_with_newer", False)
         self._forbidden_callerid_prefix = rospy.get_param("~forbidden_callerid_prefix", None)
+        self._pub_topic = rospy.get_param("~publisher_topic", "/tf_static")
 
-        self._tf_publisher = rospy.Publisher("/tf_static", TFMessage, latch=True, queue_size=100)
+        self._tf_publisher = rospy.Publisher(self._pub_topic, TFMessage, latch=True, queue_size=100)
         self._ready_publisher = rospy.Publisher("static_transform_mux/ready", Bool, latch=True, queue_size=1)
         self._tf_subscriber = rospy.Subscriber("/tf_static", TFMessage, self.tf_static_cb, queue_size=100)
 

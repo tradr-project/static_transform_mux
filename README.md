@@ -14,8 +14,8 @@ needs to have multiple static transform publishers in the system.
 
 ### Published topics 
 
-* `/tf_static` (`tf2_msgs/TFMessage` latched): Again, the static transforms. Special care is taken so that this node 
-does not react to its own messages.
+* topic defined in param `~publisher_topic` (`tf2_msgs/TFMessage` latched): Again, the static transforms. Special care
+is taken so that this node does not react to its own messages.
 * `ready` (`std_msgs/Bool` latched): This message is sent (and latched) once the first message on `/tf_static` is 
 published by this node, so that other nodes that rely on this node's operation know that it has been brought up.
 
@@ -27,3 +27,5 @@ substitute an already cached transform (otherwise, the latest received tranform 
 [`callerid`s](http://wiki.ros.org/ROS/Master_API) that will additionally be ignored by the `/tf_static` callback.
 Using this parameter is required if you transmit `/tf_static` over some non-ROS connection which changes or
 discards the `callerid` (e.g. when using [`nimbro_network`](https://github.com/AIS-Bonn/nimbro_network/)). 
+* `~publisher_topic` (`str`, defaults to `/tf_static`): Which topic to publish to. This can be the same topic as the
+input.
