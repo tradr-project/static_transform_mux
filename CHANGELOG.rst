@@ -2,8 +2,8 @@
 Changelog for package static_transform_mux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.1 (2023-05-13)
+------------------
 * Noetic compatibility.
 * Added possibility to publish to a different topic.
 * Contributors: Martin Pecka
