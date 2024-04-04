@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>static_transform_mux</name>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
   <description>A helper node that makes sure everybody knows about all static transforms, even if they are published by multiple publishers.</description>
 
   <maintainer email="peckama2@fel.cvut.cz">Martin Pecka</maintainer>

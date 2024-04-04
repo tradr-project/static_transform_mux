@@ -2,8 +2,8 @@
 Changelog for package static_transform_mux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.2 (2024-04-04)
+------------------
 * Fixed Python 3 compatibility
 * Contributors: Martin Pecka
 
