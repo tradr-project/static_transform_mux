@@ -2,6 +2,11 @@
 Changelog for package static_transform_mux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fixed Python 3 compatibility
+* Contributors: Martin Pecka
+
 1.1.1 (2023-05-13)
 ------------------
 * Noetic compatibility.
