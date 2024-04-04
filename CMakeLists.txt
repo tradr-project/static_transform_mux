@@ -7,7 +7,7 @@ catkin_package(
   CATKIN_DEPENDS rospy tf2_msgs
 )
 
-install(PROGRAMS
+catkin_install_python(PROGRAMS
   nodes/static_transform_mux
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
